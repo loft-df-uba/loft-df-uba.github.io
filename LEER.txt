@@ -1,0 +1,15 @@
+Cuidado con las comillas: acepta solo "", hay que reemplazar las que no son así de los títulos de papers.
+
+-----
+
+El servidor pide que se guarde con codificación ISO-8859-1.
+Si muestra mal las letras con tilde al cargar la página desde loft.df.uba.ar (o sea *no* ejecutando el html):
+
+En Windows asegurarse de que el bloc de notas guarde con esa codificación.
+(actualizar cuando alguien se tope con este problema)
+
+En Linux ejecutar en la terminal
+iconv -f UTF-8 -t ISO-8859-1 index.html -o index.html.tmp && mv index.html.tmp index.html
+iconv -f UTF-8 -t ISO-8859-1 index_en.html -o index_en.html.tmp && mv index_en.html.tmp index_en.html
+
+SB

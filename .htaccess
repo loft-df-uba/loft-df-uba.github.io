@@ -1,0 +1,6 @@
+<IfModule mod_alias.c>
+    # Bloquear archivos y carpetas ocultos (.git, .nojekyll, .htaccess),
+    # permitiendo /.well-known/ (usado para certificados SSL/TLS).
+    RedirectMatch 404 ^/\.(?!well-known(/|$))
+    RedirectMatch 404 ^/README\.md$
+</IfModule>
